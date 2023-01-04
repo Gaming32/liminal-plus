@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "io.github.gaming32",
+    "id": "liminal-plus",
+    "version": "${version}",
+    "metadata": {
+      "name": "Liminal Plus",
+      "description": "A small extension on top of The Corners mod by LudoCrypt.",
+      "contributors": {
+        "Gaming32": "Owner"
+      },
+      "contact": {
+        "homepage": "https://github.com/Gaming32/liminal-plus",
+        "issues": "https://github.com/Gaming32/liminal-plus/issues",
+        "sources": "https://github.com/Gaming32/liminal-plus"
+      }
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "init": "io.github.gaming32.liminalplus.LiminalPlus"
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "versions": ">=0.17.0-"
+      },
+      {
+        "id": "quilted_fabric_api",
+        "versions": ">=4.0.0-"
+      },
+      {
+        "id": "minecraft",
+        "versions": ">=1.19.2"
+      },
+      {
+        "id": "net.ludocrypt:corners",
+        "versions": ">=1.2.4"
+      },
+      "midnightlib"
+    ]
+  },
+  "mixin": "liminal-plus.mixins.json"
+}
