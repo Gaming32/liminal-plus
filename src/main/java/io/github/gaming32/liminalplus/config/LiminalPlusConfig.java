@@ -7,5 +7,5 @@ public class LiminalPlusConfig {
     public static boolean automaticPaintingPortal = true;
 
     @MidnightConfig.Entry
-    public static boolean liminalReducedDebugInfo = true;
+    public static boolean liminalReducedDebugInfo = false;
 }
