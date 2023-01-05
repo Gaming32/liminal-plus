@@ -14,7 +14,8 @@
         "homepage": "https://github.com/Gaming32/liminal-plus",
         "issues": "https://github.com/Gaming32/liminal-plus/issues",
         "sources": "https://github.com/Gaming32/liminal-plus"
-      }
+      },
+      "license": "MIT"
     },
     "intermediate_mappings": "net.fabricmc:intermediary",
     "entrypoints": {
