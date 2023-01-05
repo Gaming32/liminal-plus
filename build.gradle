@@ -22,6 +22,12 @@ repositories {
     maven {
         url = 'https://maven.terraformersmc.com/releases/'
     }
+    maven {
+        url = 'https://ladysnake.jfrog.io/artifactory/mods'
+    }
+    maven {
+        url = 'https://jitpack.io/'
+    }
 }
 
 // All the dependencies are declared at gradle/libs.version.toml and referenced with "libs.<id>"
@@ -43,9 +49,9 @@ dependencies {
     modImplementation libs.quilted.fabric.api
     // modImplementation libs.bundles.quilted.fabric.api // If you wish to use Fabric API's deprecated modules, you can replace the above line with this one
 
-    modImplementation "maven.modrinth:the-corners:1.2.4"
+    modCompileOnly "maven.modrinth:the-corners:1.2.4" // You need to add the JARs to run/mods manually. There were some dependency issues otherwise.
 
-    modImplementation "com.terraformersmc:modmenu:5.0.2"
+    modImplementation "com.terraformersmc:modmenu:4.1.2"
 
     modImplementation "maven.modrinth:midnightlib:1.0.0-quilt"
 }
